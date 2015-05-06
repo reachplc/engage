@@ -1,0 +1,19 @@
+2015-03-27 06:23:48   |   Confirm Email Error
+2015-03-27 06:27:58   |   Confirm Email Error
+2015-03-27 06:37:32   |   Confirm Email Error
+2015-03-27 04:14:32   |   Mailer Error: The following From address failed: hkj : MAIL FROM command failed,501,<hkj>: sender address must contain a domain
+
+2015-03-27 04:14:32   |   Submit Email Error
+2015-03-29 03:16:08   |   Mailer Error: The following From address failed: Tffg : MAIL FROM command failed,501,<Tffg>: sender address must contain a domain
+
+2015-03-29 03:16:08   |   Submit Email Error
+2015-04-01 02:36:18   |   Confirm Email Error
+2015-04-01 04:01:28   |   Confirm Email Error
+2015-04-01 04:10:36   |   Confirm Email Error
+2015-04-01 04:14:03   |   Confirm Email Error
+2015-04-01 04:38:24   |   Confirm Email Error
+2015-04-01 04:39:56   |   Mailer Error: The following From address failed: dfgdfg : MAIL FROM command failed,501,<dfgdfg>: sender address must contain a domain
+
+2015-04-01 04:39:56   |   Submit Email Error
+2015-04-01 06:14:22   |   SMTP Error: The following recipients failed: michael.bragg@trinitymirror.comdf
+2015-04-01 06:14:22   |   Confirm Email Error
