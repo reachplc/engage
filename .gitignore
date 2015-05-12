@@ -1,0 +1,27 @@
+# Engage
+
+## Site
+
+web/.htaccess
+
+## NodeJS
+
+node_modules/
+npm-debug.log
+
+## WordPress
+
+web/wp-config.php
+web/content/uploads
+
+### Themes
+
+
+
+### Plugins
+
+web/content/plugins/theme-check
+web/content/plugins/p3-profiler
+web/content/plugins/log-deprecated-notices
+web/content/plugins/debug-bar
+web/content/plugins/developer
