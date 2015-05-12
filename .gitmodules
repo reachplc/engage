@@ -13,3 +13,6 @@
 [submodule "web/content/plugins/google-sitemap-generator"]
 	path = web/content/plugins/google-sitemap-generator
 	url = https://github.com/wp-plugins/google-sitemap-generator.git
+[submodule "web/content/plugins/wp-oauth"]
+	path = web/content/plugins/wp-oauth
+	url = https://github.com/trinitymirror/WP-OAuth.git
