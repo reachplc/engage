@@ -4,6 +4,10 @@
 
 web/.htaccess
 
+## PHP
+
+vendor/
+
 ## NodeJS
 
 node_modules/
