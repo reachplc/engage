@@ -87,7 +87,7 @@ define( 'WP_CACHE', false );
  * Change this to the theme name.
  */
 
-/*define( 'WP_DEFAULT_THEME', '' );*/
+define( 'WP_DEFAULT_THEME', 'tm_engage' );
 
 /**
  * For developers: WordPress debugging mode.
