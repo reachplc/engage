@@ -20,6 +20,9 @@ web/content/uploads
 
 ### Themes
 
+.sass-cache
+web/content/themes/tm_engage/style.css
+web/content/themes/tm_engage/style.css.map
 
 
 ### Plugins
