@@ -19,4 +19,3 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 3. Click Activate to use your new theme right away.
 
 == Frequently Asked Questions ==
-

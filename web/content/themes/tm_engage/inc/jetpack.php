@@ -16,7 +16,7 @@ function tm_engage_jetpack_setup() {
 		'render'    => 'tm_engage_infinite_scroll_render',
 		'footer'    => 'page',
 	) );
-} // end function tm_engage_jetpack_setup
+} // end function _s_jetpack_setup
 add_action( 'after_setup_theme', 'tm_engage_jetpack_setup' );
 
 function tm_engage_infinite_scroll_render() {
