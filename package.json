@@ -15,7 +15,7 @@
     "grunt-htmlhint": "0.4.x",
     "grunt-phplint": "0.0.x",
     "grunt-recess": "1.0.x",
-    "grunt-sass": "0.1.x",
+    "grunt-contrib-sass": "0.9.x",
     "grunt-phpcs": "0.2.x"
   },
   "scripts": {

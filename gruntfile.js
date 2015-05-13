@@ -37,7 +37,7 @@ module.exports = function(grunt) {
 	 ,sass: {
      theme: {
       options: {
-        sourceMap: true
+        style: 'expanded'
       },
       files: {
         '<%= dir.theme %>/style.css': ['<%= dir.theme %>/sass/style.scss']
@@ -167,7 +167,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-css-metrics');
   grunt.loadNpmTasks('grunt-phpcs');
   grunt.loadNpmTasks('grunt-phplint');
-  grunt.loadNpmTasks('grunt-sass');
+  grunt.loadNpmTasks('grunt-contrib-sass');
 
   // Options
 
