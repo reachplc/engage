@@ -1,0 +1,19 @@
+/* ==========================================================================
+Clients
+========================================================================== */
+.clients ul{ list-style-type: none;padding:0; margin:0;}
+.clients li{ margin-bottom: 30px; min-height: 80px;padding:5px; line-height: 80px;}
+.clients li img {max-width: 100%; max-height: 100%;}
+.ptop{padding-top:90px;}
+.client-logo {width:50%; float:left;}
+
+@media screen and (min-width:768px) {
+    .client-logo {width:33.333333333%;}
+}
+
+@media screen and (min-width:992px) {
+    .client-logo {width:20%; float:left;}
+}
+
+.client-logo img{opacity:0.7; transition: all 0.5s; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; -o-transition: all 0.5s;}
+.client-logo img:hover{opacity:1;}

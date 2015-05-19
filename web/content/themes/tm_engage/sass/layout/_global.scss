@@ -1,0 +1,45 @@
+#preloader {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:#fff; /* change if the mask should have another color then white */
+    z-index:200; /* makes sure it stays on top */
+}
+
+#status {
+    width:200px;
+    height:200px;
+    position:absolute;
+    left:50%; /* centers the loading animation horizontally one the screen */
+    top:50%; /* centers the loading animation vertically one the screen */
+    background-image:url(../img/preloader.gif); /* path to your loading animation */
+    background-repeat:no-repeat;
+    background-position:center;
+    margin:-100px 0 0 -100px; /* is width and height divided by two */
+}
+
+/* ==========================================================================
+Global Styles
+========================================================================== */
+a { color: #353535; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s; }
+a:hover, a:focus { color: #d13668; text-decoration: none; }
+p { color: #777; word-spacing: 1px; line-height: 1.5; font-size: 1.1em; }
+.container{-webkit-transform: translate3d(0, 0, 0);}
+
+.section-padding { padding: 80px 0 100px }
+@media (min-width:768px){
+    .section-padding { padding: 80px 0 100px; }
+}
+.dark-bg { background: #f3f5f8; }
+.light-bg { background-color: #fff; }
+.very-dark-bg { background: #242830;}
+.dark-box { background: #f3f5f8; -webkit-box-shadow: 0 3px 0 0 #f0f2f4; -moz-box-shadow: 0 3px 0 0 #f0f2f4; box-shadow: 0 3px 0 0 #f0f2f4; }
+.light-box { background-color: #fff; -webkit-box-shadow: 0 3px 0 0 #f0f2f4; -moz-box-shadow: 0 3px 0 0 #f0f2f4; box-shadow: 0 3px 0 0 #f0f2f4; padding: 20px 0; min-height:280px;}
+.light-box:hover, .light-box:focus { -webkit-box-shadow: 0 3px 0 0 #d13668; -moz-box-shadow: 0 3px 0 0 #d13668; box-shadow: 0 3px 0 0 #d13668; }
+.box-hover { transition: all 500ms ease-in-out; -webkit-transition: all 500ms ease-in-out; -moz-transition: all 500ms ease-in-out; -o-transition: all 500ms ease-in-out; }
+.box-hover:hover, .box-hover:focus {  -webkit-transform: translate(0, -15px); -moz-transform: translate(0, -15px); -ms-transform: translate(0, -15px); -o-transform: translate(0, -15px); transform: translate(0, -15px);}
+.wrapper { height: 650px; }
+.nopadding { padding: 0; }
+.inner { padding-top: 170px; }
