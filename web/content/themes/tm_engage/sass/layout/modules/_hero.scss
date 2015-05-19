@@ -1,0 +1,23 @@
+/* ==========================================================================
+Hero
+========================================================================== */
+.hero { overflow:hidden; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: auto; }
+.hero h1 { color:#fff; font-family: 'bebas_neuebold', sans-serif; font-size: 4em; letter-spacing: -1px; margin: 0 20px; line-height:.8em; margin-top: -.7em; text-shadow: 0px 0px 1px rgba(100, 100, 100, 1);}
+.hero h1 span { color: #a1a9b0; display: inline-block; }
+.hero h2{font-family: 'bebas_neuebold', sans-serif; text-transform: none; color:#fff;}
+.hero h2:after { content:none; }
+.hero p { letter-spacing: 1px; margin-top:10px; }
+@media (min-width: 768px) {
+  .hero h1 { font-size: 7em; margin: 0 15%; }
+}
+.hidden {
+    display:none;
+}
+.quotes {display: none;}
+#brand-text { width: 100%; float: left; display: table-cell; vertical-align: middle; }
+.brandItem{ display:none; width:100%; left:0;}
+.learn-more-btn { background: rgba(61, 201, 179, 1); padding: 20px 40px; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; color: #fff; text-transform: uppercase; letter-spacing: 1px; display: inline-block; -webkit-box-shadow: 0 3px 0 0 #309383; -moz-box-shadow: 0 3px 0 0 #309383; box-shadow: 0 3px 0 0 #309383; margin: 60px 0 0; font-weight: bold; }
+.learn-more-btn:hover, .learn-more-btn:focus { background: rgba(61, 201, 179, 0.6); color: #fff; }
+
+.slide-more{width:50px; height:50px; color:#fff; text-align: center; padding-top:15px; background-color: #d13668; border-radius: 60px; position:absolute; z-index:50; left:50%; margin-left:-25px; bottom:20px;}
+.slide-more:hover, .slide-more:focus { color: #fff; background-color: #242830; }

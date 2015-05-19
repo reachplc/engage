@@ -1,0 +1,18 @@
+[submodule "web/system"]
+	path = web/system
+	url = https://github.com/WordPress/WordPress.git
+[submodule "web/content/plugins/wordpress-seo"]
+	path = web/content/plugins/wordpress-seo
+	url = https://github.com/Yoast/wordpress-seo.git
+[submodule "web/content/plugins/wp-robots-txt"]
+	path = web/content/plugins/wp-robots-txt
+	url = https://github.com/chrisguitarguy/WP-Robots-Txt.git
+[submodule "web/content/plugins/google-analytics-for-wordpress"]
+	path = web/content/plugins/google-analytics-for-wordpress
+	url = https://github.com/Yoast/google-analytics-for-wordpress.git
+[submodule "web/content/plugins/google-sitemap-generator"]
+	path = web/content/plugins/google-sitemap-generator
+	url = https://github.com/wp-plugins/google-sitemap-generator.git
+[submodule "web/content/plugins/wp-oauth"]
+	path = web/content/plugins/wp-oauth
+	url = https://github.com/trinitymirror/WP-OAuth.git
