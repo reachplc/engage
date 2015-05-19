@@ -16,7 +16,7 @@ module.exports = function(grunt) {
    ,watch: {
       less: {
         files: ['<%= dir.theme %>/sass/**/*']
-       ,tasks: ['recess']
+       ,tasks: ['sass']
       }
      ,image: {
         files: ['<%= dir.theme %>/gui/**/*']
@@ -24,6 +24,9 @@ module.exports = function(grunt) {
      ,theme: {
         files: ['<%= dir.theme %>/**/*.php']
       }
+     ,javascript: {
+     	  files: ['<%=dir.theme %>/js/**/*.js']
+     }
      ,plugin: {
         files: ['<%= dir.plugin %>/*']
       }
