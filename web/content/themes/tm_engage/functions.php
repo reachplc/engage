@@ -166,6 +166,15 @@ function add_ie_respond () {
 add_action('wp_head', 'add_ie_respond');
 
 /**
+ * Favicons
+ */
+function kia_add_favicon(){ ?>
+    <!-- Custom Favicons -->
+    <link rel="apple-touch-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/gui/apple-touch-icon.png">
+    <?php }
+add_action('wp_head','kia_add_favicon');
+
+/**
  * Module
  * Render the selected Module to the page
  */
