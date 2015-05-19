@@ -141,6 +141,31 @@ function tm_engage_scripts() {
 add_action( 'wp_enqueue_scripts', 'tm_engage_scripts' );
 
 /**
+ * HTML5 Shiv
+ * Enables use of HTML5 sectioning elements in legacy Internet
+ * Explorer and provides basic HTML5 styling for Internet Explorer 6-9
+ */
+// add ie conditional html5 shim to header
+function add_ie_html5_shim () {
+    echo '<!--[if lt IE 9]>';
+    echo '<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>';
+    echo '<![endif]-->';
+}
+add_action('wp_head', 'add_ie_html5_shim');
+/**
+ * Respond
+ * A fast & lightweight polyfill for min/max-width CSS3 Media Queries
+ * (for IE 6-8, and more).
+ */
+// add ie conditional respond to header
+function add_ie_respond () {
+    echo '<!--[if lt IE 9]>';
+    echo '<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>';
+    echo '<![endif]-->';
+}
+add_action('wp_head', 'add_ie_respond');
+
+/**
  * Module
  * Render the selected Module to the page
  */
