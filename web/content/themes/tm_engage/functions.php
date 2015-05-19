@@ -118,6 +118,14 @@ function tm_engage_scripts() {
 add_action( 'wp_enqueue_scripts', 'tm_engage_scripts' );
 
 /**
+ * Module
+ * Render the selected Module to the page
+ */
+function module($module, $options = null){
+    include "modules/{$module}.php";
+}
+
+/**
  * Implement the Custom Header feature.
  */
 //require get_template_directory() . '/inc/custom-header.php';
