@@ -1,4 +1,10 @@
-<section class="text-center special section-padding" id="responsive">
+<?php
+/**
+ * The template for displaying special module.
+ *
+ * @package tm_engage
+ */
+?><section class="text-center special section-padding" id="responsive">
     <div class="container">
       <div class="row">
         <div class="col-md-10 col-md-offset-1 wp3 delay-05s">

@@ -2,7 +2,10 @@
 Subscribe
 ========================================================================== */
 
-.subscribe { padding: 120px 0 140px; background-color: transparent; }
+.subscribe { padding: 120px 0 140px;
+background-color: #242830;
+background-image: url(gui/subscribe-back.jpg);
+background-repeat: no-repeat; }
 .subscribe-inner{height:100%; width:100%; position: absolute; top:0; left:0;}
 .subscribe h1 { color: #fff; margin-bottom: 40px; }
 .subscribe h1 span { display: inline-block; font-size: 1em; text-transform: uppercase; margin-top: 20px; letter-spacing: 1px; }

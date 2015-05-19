@@ -1,3 +1,5 @@
+@import "fonts";
+
 body,
 button,
 input,
@@ -5,8 +7,18 @@ select,
 textarea {
 	color: $color__text-main;
 	font-family: $font__main;
-	@include font-size(1);
+	@include font-size(0.875);
 	line-height: $font__line-height-body;
+	-webkit-text-size-adjust: 100%; /* 2 */
+	-ms-text-size-adjust: 100%; /* 2 */
+}
+
+html, html a { -webkit-font-smoothing: antialiased; text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004); }
+
+/* * Addresses margins handled incorrectly in IE 6/7. */
+body {
+	margin: 0;
+	overflow:hidden;
 }
 
 @import "headings";

@@ -54,9 +54,10 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "normalize";
 
 /*--------------------------------------------------------------
-# Bootstrap
+# Library
 --------------------------------------------------------------*/
-@import "bootstrap.scss";
+@import "library/bootstrap";
+@import "library/animate";
 
 /*--------------------------------------------------------------
 # Typography
@@ -116,8 +117,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
+@import "layout/global";
 @import "layout/footer";
 @import "layout/grid";
+@import "layout/modules/hero";
+@import "layout/modules/flexslider";
 @import "layout/modules/contact";
 @import "layout/modules/clients";
 @import "layout/modules/cta";
@@ -125,4 +129,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "layout/modules/philosophy";
 @import "layout/modules/portfolio";
 @import "layout/modules/special";
-@import "layout/modules/_subscribe";
+@import "layout/modules/team";
+@import "layout/modules/subscribe";
+@import "layout/modules/waypoints";
+@import "layout/modules/slider";

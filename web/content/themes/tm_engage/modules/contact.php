@@ -1,4 +1,10 @@
-<section class="dark-bg text-center section-padding contact-wrap" id="contact"> <a href="#top" class="up-btn"><i class="fa fa-chevron-up"></i></a>
+<?php
+/**
+ * The template for displaying contact module.
+ *
+ * @package tm_engage
+ */
+?><section class="dark-bg text-center section-padding contact-wrap" id="contact"> <a href="#top" class="up-btn"><i class="fa fa-chevron-up"></i></a>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">

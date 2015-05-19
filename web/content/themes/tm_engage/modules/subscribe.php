@@ -1,11 +1,17 @@
-<section id="subscribe" class="subscribe text-center" data-parallax="scroll" data-speed="0.4" data-image-src="img/subscribe-back.jpg">
+<?php
+/**
+ * The template for displaying subscribe module.
+ *
+ * @package tm_engage
+ */
+?><section id="subscribe" class="subscribe text-center very-dark-bg" data-parallax="scroll" data-speed="0.4">
   <div class="container">
     <h1 class="arrow-pink"><i class="fa fa-paper-plane"></i><span class="magenta">Engage:</span> With us</h1>
     <form id="theForm" class="simform" autocomplete="off" action="" method="post">
       <div class="simform-inner">
         <ol class="questions">
           <li> <span>
-            <label for="name">What's your full name?</label>
+            <label for="name">What&rsquo;s your full name?</label>
             </span>
             <input id="name" name="name" type="text"/>
           </li>
@@ -20,7 +26,7 @@
             <input id="q2" name="q2" type="text"/>
           </li>
           <li> <span>
-            <label for="email">What's your email address?</label>
+            <label for="email">What&rsquo;s your email address?</label>
             </span>
             <input id="email" name="email" type="text"/>
           </li>
