@@ -14,12 +14,16 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main container section-padding" role="main">
+
 
 		<?php if ( have_posts() ) : ?>
+			<div class="row">
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
+
+			<div class="col-sm-4 col-md-4">
 
 				<?php
 					/* Include the Post-Format-specific template for the content.
@@ -28,19 +32,40 @@ get_header(); ?>
 					 */
 					get_template_part( 'template-parts/content', get_post_format() );
 				?>
-
+			</div>
 			<?php endwhile; ?>
+			</div>
 
-			<?php the_posts_navigation(); ?>
+		<div class="row">
+
+			<?php if (is_single()) : ?>
+
+				<div class="navigation  col-md-10 col-md-offset-1">
+					<?php previous_post_link('<div class="alignleft">Previous entry: %link</div>', '%title'); ?>
+					<?php next_post_link('<div class="alignright">Next entry: %link</div>', '%title'); ?>
+				</div>
+
+			<?php else : ?>
+
+				<div class="navigation  col-md-10 col-md-offset-1">
+					<div class="alignleft"><?php next_posts_link('&laquo; Older Entries') ?></div>
+					<div class="alignright"><?php previous_posts_link('Newer Entries &raquo;') ?></div>
+				</div>
+
+			<?php endif; ?>
+
+		</div>
 
 		<?php else : ?>
-
+		<div class="row">
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
+		</div>
 		<?php endif; ?>
+
+		</div><!-- .row -->
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+<?php #get_sidebar(); ?>
 <?php get_footer(); ?>

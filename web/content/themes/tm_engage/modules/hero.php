@@ -4,7 +4,9 @@
  *
  * @package tm_engage
  */
-?><section class="hero js-height-full" id="hero">
+?>
+
+<section class="hero js-height-full" id="hero">
   <div id="engage-hero" class="js-height-full">
     <div data-src="<?php echo bloginfo( 'template_directory' ); ?>/gui/hero/hero-bg_01.jpg"></div>
     <div data-src="<?php echo bloginfo( 'template_directory' ); ?>/gui/hero/hero-bg_02.jpg"></div>

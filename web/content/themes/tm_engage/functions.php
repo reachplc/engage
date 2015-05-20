@@ -23,6 +23,9 @@ if ( ! function_exists( 'tm_engage_setup' ) ) :
 		 */
 		load_theme_textdomain( 'tm_engage', get_template_directory() . '/languages' );
 
+		// Add support for feature images
+		add_theme_support( 'post-thumbnails' );
+
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
 
@@ -110,7 +113,7 @@ function tm_engage_scripts() {
 	wp_enqueue_style( 'tm_engage-style', get_stylesheet_uri() );
 
 	// Load Font Awesome
-	wp_enqueue_style( 'tm_engage-font-awesome', '//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' );
+	wp_enqueue_style( 'tm_engage-font-awesome', '//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css' );
 
 	// Load custom web fonts
 	wp_enqueue_style( 'tm_engage-fonts', '//fast.fonts.net/cssapi/1bdbf233-71a9-42c6-bfae-07e7f8a658a9.css' );
