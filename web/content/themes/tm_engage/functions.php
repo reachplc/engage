@@ -23,6 +23,9 @@ if ( ! function_exists( 'tm_engage_setup' ) ) :
 		 */
 		load_theme_textdomain( 'tm_engage', get_template_directory() . '/languages' );
 
+		// Add support for feature images
+		add_theme_support( 'post-thumbnails' );
+
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
 
