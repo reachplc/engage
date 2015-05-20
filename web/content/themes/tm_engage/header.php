@@ -25,11 +25,6 @@
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'tm_engage' ); ?></a>
 
-		<!--<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'tm_engage' ); ?></button>
-			<?php #wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-		</nav>--><!-- #site-navigation -->
-
 <div class="topnavbar">
   <div class="container">
     <div class="row">
@@ -42,8 +37,11 @@
           <li><a href="https://twitter.com/EngageTrinity" class="nav-social-btn" target="_blank"><i class="fa fa-twitter"></i></a></li>
           <li><a href="mailto:engage@trinitymirror.com" target="_top" class="nav-social-btn"><i class="fa fa-envelope"></i></a></li>
         </ul></div>
+        <?php if ( has_nav_menu( 'primary' ) ) : ?>
           <div class="text-right navicon pull">
-          <div id="menu-toggle" class="nav_slide_button nav-toggle"><span></span></div></div>
+	          <div id="menu-toggle" class="nav_slide_button nav-toggle"><span></span></div>
+          </div>
+        <?php endif; ?>
       </div>
     </div>
   </div>
@@ -53,17 +51,21 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
-        <nav id="nav-show" class="js-animate pull">
-          <ul class="top-nav">
-            <li><a href="#intro">Introduction <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
-            <li><a href="#portfolio">Our clients <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
-            <li><a href="#features">Our philosophy <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
-            <li><a href="#responsive">Our portfolio <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
 
-            <li><a href="#subscribe">Engage with us <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
-            <li><a href="#contact">Get in touch <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
-          </ul>
-        </nav>
+      <?php if ( has_nav_menu( 'primary' ) ) : ?>
+			<nav id="nav-show" class="js-animate pull main-navigation" role="navigation">
+				<?php
+					// Primary navigation menu.
+					wp_nav_menu( array(
+						'menu_class'     => 'nav-menu',
+						'theme_location' => 'primary',
+						'items_wrap'     => '<ul id="%1$s" class="%2$s top-nav">%3$s</ul>',
+						'link_after'      => ' <span class="indicator"><i class="fa fa-angle-right"></i></span>'
+					) );
+				?>
+			</nav><!-- .main-navigation -->
+		<?php endif; ?>
+
       </div>
     </div>
   </div>
