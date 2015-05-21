@@ -43,7 +43,8 @@ module.exports = function(grunt) {
         style: 'expanded'
       },
       files: {
-        '<%= dir.theme %>/style.css': ['<%= dir.theme %>/sass/style.scss']
+        '<%= dir.theme %>/style.css': ['<%= dir.theme %>/sass/style.scss'],
+        '<%= dir.theme %>/editor-style.css': ['<%= dir.theme %>/sass/editor-style.scss']
       }
     }
   }

@@ -83,6 +83,11 @@ add_action( 'after_setup_theme', 'tm_engage_setup' );
  */
 function tm_engage_content_width() {
 	$GLOBALS['content_width'] = apply_filters( 'tm_engage_content_width', 640 );
+
+	if ( ! isset( $content_width ) ) {
+		$content_width = 1920;
+	}
+
 }
 add_action( 'after_setup_theme', 'tm_engage_content_width', 0 );
 
@@ -184,6 +189,14 @@ add_action('wp_head','kia_add_favicon');
 function module($module, $options = null){
 	include "modules/{$module}.php";
 }
+
+/**
+ * Set up custom TinyMCE style sheet
+ */
+function tm_engage_add_editor_styles() {
+    add_editor_style( 'editor-style.css' );
+}
+add_action( 'admin_init', 'tm_engage_add_editor_styles' );
 
 /**
  * Implement the Custom Header feature.
