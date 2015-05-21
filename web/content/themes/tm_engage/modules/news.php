@@ -20,6 +20,8 @@ $news_args = array(
 
 ?>
 
+<?php if( $recent_news ): // Check for news posts ?>
+
 <section class="news text-center section-padding" id="news">
 <div class="container">
   <div class="row">
@@ -56,3 +58,5 @@ $news_args = array(
     </div>
   </div>
 </section>
+
+<?php endif; ?>
