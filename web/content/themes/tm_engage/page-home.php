@@ -14,7 +14,9 @@ get_header(); ?>
 
 			<?php module( 'intro' ); ?>
 
+			<?php if ( have_posts() ) : ?>
 			<?php module( 'news' ); ?>
+			<?php endif; ?>
 
 			<?php module( 'clients' ); ?>
 
