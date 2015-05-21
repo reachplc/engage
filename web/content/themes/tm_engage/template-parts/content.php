@@ -12,7 +12,7 @@
 	  <?php echo get_the_post_thumbnail( $post->ID ); ?>
 	  </div>
 	<?php else: ?>
-		<img src="<?php echo bloginfo( 'template_directory' ); ?>/gui/feature-placeholder.png" alt="">
+		<img src="<?php echo get_template_directory_uri(); ?>/gui/feature-placeholder.png" alt="">
   <?php endif; ?>
 
 		<?php the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>

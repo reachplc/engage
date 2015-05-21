@@ -39,7 +39,7 @@ $news_args = array(
                 	<?php if( has_post_thumbnail( $post->ID ) ): ?>
 		                <?php echo get_the_post_thumbnail( $post->ID ); ?>
 	                <?php else: ?>
-	                  <img src="<?php echo bloginfo( 'template_directory' ); ?>/gui/feature-placeholder.png" alt="">
+	                  <img src="<?php echo get_template_directory_uri(); ?>/gui/feature-placeholder.png" alt="">
 	                <?php endif; ?>
                   <div class="overlay">
                     <div class="info-dump-button expand"><i class="fa fa-newspaper-o"></i><br>

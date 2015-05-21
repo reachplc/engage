@@ -13,7 +13,7 @@
            <li>
             <div class="col-sm-4 col-md-4 wp5 delay-05s">
               <div class="overlay-effect effects clearfix">
-                <div class="img"><img src="<?php echo bloginfo( 'template_directory' ); ?>/gui/case-studies/casestudies_07.jpg" alt="Kellogg's">
+                <div class="img"><img src="<?php echo get_template_directory_uri(); ?>/gui/case-studies/casestudies_07.jpg" alt="Kellogg's">
                   <div class="overlay">
                     <div class="info-dump-button expand" data-target-id="case-study-07.html"><i class="fa fa-search"></i><br>
                       View More</div>
@@ -25,7 +25,7 @@
             </div>
             <div class="col-sm-4 col-md-4 wp5 delay-05s">
               <div class="overlay-effect effects clearfix">
-                <div class="img"><img src="<?php echo bloginfo( 'template_directory' ); ?>/gui/case-studies/casestudies_08.jpg" alt="Jaguar Land Rover">
+                <div class="img"><img src="<?php echo get_template_directory_uri(); ?>/gui/case-studies/casestudies_08.jpg" alt="Jaguar Land Rover">
                   <div class="overlay">
                     <div class="info-dump-button expand" data-target-id="case-study-08.html"><i class="fa fa-search"></i><br>
                       View More</div>
@@ -37,7 +37,7 @@
             </div>
             <div class="col-sm-4 col-md-4 wp5 delay-05s">
               <div class="overlay-effect effects clearfix">
-                <div class="img"><img src="<?php echo bloginfo( 'template_directory' ); ?>/gui/case-studies/casestudies_09.jpg" alt="AB Inbev">
+                <div class="img"><img src="<?php echo get_template_directory_uri(); ?>/gui/case-studies/casestudies_09.jpg" alt="AB Inbev">
                   <div class="overlay">
                     <div class="info-dump-button expand" data-target-id="case-study-09.html"><i class="fa fa-search"></i><br>
                       View More</div>
@@ -51,7 +51,7 @@
           <li>
             <div class="col-sm-4 col-md-4 wp5 delay-05s">
               <div class="overlay-effect effects clearfix">
-                <div class="img"><img src="<?php echo bloginfo( 'template_directory' ); ?>/gui/case-studies/casestudies_01.jpg" alt="Aldi">
+                <div class="img"><img src="<?php echo get_template_directory_uri(); ?>/gui/case-studies/casestudies_01.jpg" alt="Aldi">
                   <div class="overlay">
                     <div class="info-dump-button expand" data-target-id="case-study-01.html"><i class="fa fa-search"></i><br>
                       View More</div>
@@ -63,7 +63,7 @@
             </div>
             <div class="col-sm-4 col-md-4 wp5 delay-05s">
               <div class="overlay-effect effects clearfix">
-                <div class="img"><img src="<?php echo bloginfo( 'template_directory' ); ?>/gui/case-studies/casestudies_02.jpg" alt="Softcat">
+                <div class="img"><img src="<?php echo get_template_directory_uri(); ?>/gui/case-studies/casestudies_02.jpg" alt="Softcat">
                   <div class="overlay">
                     <div class="info-dump-button expand" data-target-id="case-study-02.html"><i class="fa fa-search"></i><br>
                       View More</div>
@@ -75,7 +75,7 @@
             </div>
             <div class="col-sm-4 col-md-4 wp5 delay-05s">
               <div class="overlay-effect effects clearfix">
-                <div class="img"><img src="<?php echo bloginfo( 'template_directory' ); ?>/gui/case-studies/casestudies_03.jpg" alt="Firstfound">
+                <div class="img"><img src="<?php echo get_template_directory_uri(); ?>/gui/case-studies/casestudies_03.jpg" alt="Firstfound">
                   <div class="overlay">
                     <div class="info-dump-button expand" data-target-id="case-study-03.html"><i class="fa fa-search"></i><br>
                       View More</div>
@@ -89,7 +89,7 @@
           <li>
             <div class="col-sm-4 col-md-4 wp5 delay-05s">
               <div class="overlay-effect effects clearfix">
-                <div class="img"><img src="<?php echo bloginfo( 'template_directory' ); ?>/gui/case-studies/casestudies_04.jpg" alt="Fallibroome Specialist Arts College">
+                <div class="img"><img src="<?php echo get_template_directory_uri(); ?>/gui/case-studies/casestudies_04.jpg" alt="Fallibroome Specialist Arts College">
                   <div class="overlay">
                     <div class="info-dump-button expand" data-target-id="case-study-04.html"><i class="fa fa-search"></i><br>
                       View More</div>
@@ -101,7 +101,7 @@
             </div>
             <div class="col-sm-4 col-md-4 wp5 delay-05s">
               <div class="overlay-effect effects clearfix">
-                <div class="img"><img src="<?php echo bloginfo( 'template_directory' ); ?>/gui/case-studies/casestudies_05.jpg" alt="30 Plus">
+                <div class="img"><img src="<?php echo get_template_directory_uri(); ?>/gui/case-studies/casestudies_05.jpg" alt="30 Plus">
                   <div class="overlay">
                     <div class="info-dump-button expand" data-target-id="case-study-05.html"><i class="fa fa-search"></i><br>
                       View More</div>
@@ -113,7 +113,7 @@
             </div>
             <div class="col-sm-4 col-md-4 wp5 delay-05s">
               <div class="overlay-effect effects clearfix">
-                <div class="img"><img src="<?php echo bloginfo( 'template_directory' ); ?>/gui/case-studies/casestudies_06.jpg" alt="Greystar Europe">
+                <div class="img"><img src="<?php echo get_template_directory_uri(); ?>/gui/case-studies/casestudies_06.jpg" alt="Greystar Europe">
                   <div class="overlay">
                     <div class="info-dump-button expand" data-target-id="case-study-06.html"><i class="fa fa-search"></i><br>
                       View More</div>

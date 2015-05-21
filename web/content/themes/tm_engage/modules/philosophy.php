@@ -18,7 +18,7 @@
           <div class="col-sm-4 col-md-4 wp2 delay-05s">
             <div class="icon"> <div class="icon-scale"></div> </div>
             <h2>Our scale</h2>
-            <p>We don&rsquo;t mean to boast, but we're huge - in fact no other regional media brand comes close.  We have literally thousands of newspapers, magazines and websites. That means more eyeballs, more candidates and more ways to find the right person for the job.</p>
+            <p>We don&rsquo;t mean to boast, but we&rsquo;re huge - in fact no other regional media brand comes close.  We have literally thousands of newspapers, magazines and websites. That means more eyeballs, more candidates and more ways to find the right person for the job.</p>
           </div>
           <div class="col-sm-4 col-md-4 wp2 delay-05s">
             <div class="icon"><div class="icon-method"></div></div>
