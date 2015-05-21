@@ -30,7 +30,7 @@
     <div class="row">
       <div class="col-md-12">
         <div class="engage-logo"><?php bloginfo( 'name' ); ?></div>
-        <div id="tmlogo" class="header-logo"><a href="http://www.trinitymirror.com"><img src="<?php echo bloginfo( 'template_directory' ); ?>/gui/tm_header_logo.png" alt="Trinity Mirror plc"></a></div>
+        <div id="tmlogo" class="header-logo"><a href="http://www.trinitymirror.com"><img src="<?php echo get_template_directory_uri(); ?>/gui/tm_header_logo.png" alt="Trinity Mirror plc"></a></div>
         <div id="social-nav" class="nav-social"><ul class="social-buttons">
           <li><a href="https://www.linkedin.com/company/engage-trinity" target="_blank" class="nav-social-btn"><i class="fa fa-linkedin"></i></a></li>
           <li><a href="https://www.facebook.com/pages/Engage-Trinity/290229891101088?skip_nax_wizard=true&ref_type=logout_gear" class="nav-social-btn" target="_blank"><i class="fa fa-facebook"></i></a></li>

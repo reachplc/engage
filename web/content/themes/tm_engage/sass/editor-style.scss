@@ -1,22 +1,5 @@
 /*
-Theme Name: tm_engage
-Theme URI: http://engage.trinitymirror.com/
-Author: Trinity Mirror Creative
-Author URI: http://wwwtrinitymirror.com/
-Description: Description
-Version: 1.0.0
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: tm_engage
-
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
-
-tm_engage is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
-Underscores is distributed under the terms of the GNU GPL v2 or later.
-
-Normalizing styles have been helped along thanks to the fine work of
-Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+Editor Styles
 */
 
 /*--------------------------------------------------------------
@@ -26,18 +9,13 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Typography
 # Elements
 # Forms
-# Navigation
-	## Links
-	## Menus
 # Accessibility
 # Alignments
 # Clearings
-# Widgets
 # Content
     ## Posts and pages
 	## Asides
 	## Comments
-# Infinite scroll
 # Media
 	## Captions
 	## Galleries
@@ -56,7 +34,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Library
 --------------------------------------------------------------*/
 @import "library/bootstrap";
-@import "library/animate";
 
 /*--------------------------------------------------------------
 # Typography
@@ -74,11 +51,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "forms/forms";
 
 /*--------------------------------------------------------------
-# Navigation
---------------------------------------------------------------*/
-@import "navigation/navigation";
-
-/*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
 @import "modules/accessibility";
@@ -94,21 +66,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "modules/clearings";
 
 /*--------------------------------------------------------------
-# Widgets
---------------------------------------------------------------*/
-@import "site/secondary/widgets";
-
-/*--------------------------------------------------------------
-# Content
---------------------------------------------------------------*/
-@import "site/site";
-
-/*--------------------------------------------------------------
-# Infinite scroll
---------------------------------------------------------------*/
-@import "modules/infinite-scroll";
-
-/*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
 @import "media/media";
@@ -117,19 +74,4 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Layout
 --------------------------------------------------------------*/
 @import "layout/global";
-@import "layout/footer";
-@import "layout/grid";
-@import "layout/modules/hero";
-@import "layout/modules/news";
-@import "layout/modules/flexslider";
-@import "layout/modules/contact";
-@import "layout/modules/clients";
-@import "layout/modules/cta";
-@import "layout/modules/intro";
-@import "layout/modules/philosophy";
-@import "layout/modules/portfolio";
-@import "layout/modules/special";
-@import "layout/modules/team";
-@import "layout/modules/subscribe";
-@import "layout/modules/waypoints";
-@import "layout/modules/slider";
+

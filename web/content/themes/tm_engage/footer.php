@@ -15,7 +15,7 @@
 	    <div class="row">
 	      <div class="col-xs-6">
 	        <div class="footer_logo">
-	        <img src="<?php echo bloginfo( 'template_directory' ); ?>/gui/tm_logo.png" alt="Trinity Mirror">
+	        <img src="<?php echo get_template_directory_uri(); ?>/gui/tm_logo.png" alt="Trinity Mirror">
 	      </div>
 	      </div>
 	      <div class="col-xs-6 credit">
