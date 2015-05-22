@@ -1,0 +1,10 @@
+h1 { font-family: 'bebas_neuebold', sans-serif; font-size: 4.2em; margin: 0.67em 0; color: #242830; line-height: 1;}
+@media screen and (min-width:1025px) {
+	h1 {font-size: 5.5em;}
+}
+h2 { font-size: 1.3em; color: #242830; text-transform: uppercase; font-weight: bold; }
+h2::after { content: " "; border: solid 2px #d13668; display: block; width: 35px; margin: 25px auto; }
+h3 { font-size: 1.17em; margin: 1em 0; line-height: 1.5}
+h4 { font-size: 1em; margin: 1.33em 0; }
+h5 { font-size: 0.83em; margin: 1.67em 0; }
+h6 { font-size: 0.75em; margin: 2.33em 0; }

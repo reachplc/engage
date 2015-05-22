@@ -1,0 +1,36 @@
+# Engage
+
+## Site
+
+web/.htaccess
+
+## PHP
+
+vendor/
+
+## NodeJS
+
+node_modules/
+npm-debug.log
+
+## WordPress
+
+web/wp-config.php
+web/content/uploads
+
+### Themes
+
+.sass-cache
+web/content/themes/tm_engage/style.css
+web/content/themes/tm_engage/style.css.map
+web/content/themes/tm_engage/editor-style.css
+web/content/themes/tm_engage/editor-style.css.map
+
+### Plugins
+
+web/content/plugins/theme-check
+web/content/plugins/p3-profiler
+web/content/plugins/log-deprecated-notices
+web/content/plugins/debug-bar
+web/content/plugins/developer
+web/content/plugins/user-switching
