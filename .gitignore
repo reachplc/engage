@@ -6,7 +6,7 @@ web/.htaccess
 
 ## PHP
 
-vendor/
+/vendor/
 
 ## NodeJS
 
