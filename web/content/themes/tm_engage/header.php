@@ -36,6 +36,7 @@
           <li><a href="https://www.facebook.com/pages/Engage-Trinity/290229891101088?skip_nax_wizard=true&ref_type=logout_gear" class="nav-social-btn" target="_blank"><i class="fa fa-facebook"></i></a></li>
           <li><a href="https://twitter.com/EngageTrinity" class="nav-social-btn" target="_blank"><i class="fa fa-twitter"></i></a></li>
           <li><a href="mailto:engage@trinitymirror.com" target="_top" class="nav-social-btn"><i class="fa fa-envelope"></i></a></li>
+          <li><a href="<?php echo get_home_url(); ?>/#blog">Our blog</i></a></li>
         </ul></div>
         <?php if ( has_nav_menu( 'primary' ) ) : ?>
           <div class="text-right navicon pull">

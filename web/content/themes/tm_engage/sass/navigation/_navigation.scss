@@ -19,7 +19,7 @@ box-shadow:         0px 1px 3px 0px rgba(50, 50, 50, 0.3);}
     -moz-transition: opacity 0.5s ease-in-out;
     transition: opacity 0.5s ease-in-out; opacity: 1;}
 @media (min-width:550px){
-.header-logo{ width: 120px;float: left; right: 260px;}
+.header-logo{ width: 120px;float: left; right: 330px;}
 }
 .header-logo img{ width:100%; }
 
@@ -59,6 +59,7 @@ Nav Social Icons
 @media (min-width: 550px) {
   .nav-social{visibility:visible; opacity: 1;}
 }
+.nav-social a{color:#fff;}
 .nav-hide{visibility:hidden; opacity: 0;}
 .nav-social-btn { width: 30px; height: 30px; border-radius: 50%; -moz-border-radius: 50%; -webkit-border-radius: 50%; -o-border-radius: 50%; display: inline-block; color: #fff; font-size: 14px; line-height: 26px; text-align: center; border:2px solid #fff; }
 .nav-social-btn:hover, .social-btn:focus { background: #d13668; color: #fff; }
