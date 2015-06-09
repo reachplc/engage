@@ -22,11 +22,11 @@ $news_args = array(
 
 <?php if( $recent_news ): // Check for news posts ?>
 
-<section class="news text-center section-padding" id="news">
+<section class="news text-center section-padding" id="blog">
 <div class="container">
   <div class="row">
       <div class="col-md-10 col-md-offset-1">
-        <h1 class="arrow-pink"><span class="magenta">Engage:</span> Our News.</h1>
+        <h1 class="arrow-pink"><span class="magenta">Engage:</span> Our Blog.</h1>
     </div>
   </div><!-- .row -->
     <div class="clearfix"></div>
