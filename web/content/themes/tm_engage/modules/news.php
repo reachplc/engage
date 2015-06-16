@@ -5,13 +5,15 @@
  * @package tm_engage
  */
 
+
+$post_type = 'post';
 $news_args = array(
   'numberposts' => 3,
   'offset' => 0,
   'category' => 0,
   'orderby' => 'post_date',
   'order' => 'DESC',
-  'post_type' => 'post',
+  'post_type' => $post_type,
   'post_status' => 'publish',
   'suppress_filters' => true );
 
@@ -56,7 +58,14 @@ $news_args = array(
 <?php endforeach; wp_reset_postdata(); ?>
       </div>
     </div>
-  </div>
+
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+
+        <a class="btn btn--primary btn-lg" href="<?php echo get_permalink( get_page_by_path( 'news' ) ) ?>">Blog Archive</a>
+
+    </div>
+  </div><!-- .container -->
 </section>
 
 <?php endif; ?>
