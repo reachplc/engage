@@ -5,8 +5,14 @@ News
 	background-color: #f8f8f8;
 }
 
+@media screen and ( min-width: 768px ){
+	.archive-news {
+		min-height: 725px;
+	}
+}
+
 @media screen and ( min-width: 922px ){
 	.archive-news {
-		min-height: 730px;
+		min-height: 735px;
 	}
 }
