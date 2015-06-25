@@ -1,12 +1,13 @@
 # Engage
 
-## Site
+## Server
 
-web/.htaccess
+.env
+/web/.htaccess
 
 ## PHP
 
-/vendor/
+/vendor
 
 ## NodeJS
 
@@ -16,6 +17,7 @@ npm-debug.log
 ## WordPress
 
 web/wp-config.php
+web/system
 web/content/uploads
 
 ### Themes
@@ -28,9 +30,8 @@ web/content/themes/tm_engage/editor-style.css.map
 
 ### Plugins
 
-web/content/plugins/theme-check
-web/content/plugins/p3-profiler
-web/content/plugins/log-deprecated-notices
-web/content/plugins/debug-bar
-web/content/plugins/developer
-web/content/plugins/user-switching
+web/content/plugins
+web/content/mu-plugins/*
+
+#### White-list Plugins
+!web/content/mu-plugins/engage_admin.php
