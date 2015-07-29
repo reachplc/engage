@@ -17,7 +17,7 @@
     <div class="row js-height-full">
       <div class="js-table">
         <div class="text-center js-cell">
-          <div id="brand-text" class="">
+          <div id="brand-text" class="clearfix">
             <div class="brandItem">
               <h1><span class="magenta">Target:</span> A third of the UK&rsquo;s adult population</h1>
             </div>
