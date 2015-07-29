@@ -30,17 +30,17 @@
 			<div class="col-md-4 wp6 delay-1-5s">
 				<div class="light-box box-hover">
 					<h2><i class="fa fa-linkedin"></i><span>Linkedin</span></h2>
-					<p><a href="https://www.linkedin.com/company/engage-trinity" target="_blank">Keep up with Engage</a></p>
+					<p><?php if ( get_theme_mod( 'linkedin' ) ) : ?><a href="<?php echo get_theme_mod( 'linkedin' ); ?>" target="_blank">Keep up with Engage</a><?php endif; ?></p>
 				</div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-md-12">
 				<ul class="social-buttons">
-					<li><a href="https://www.linkedin.com/company/engage-trinity" target="_blank" class="social-btn"><i class="fa fa-linkedin"></i></a></li>
-					<li><a href="https://www.facebook.com/pages/Engage-Trinity/290229891101088?skip_nax_wizard=true&ref_type=logout_gear" target="_blank" class="social-btn"><i class="fa fa-facebook"></i></a></li>
-					<li><a href="https://twitter.com/EngageTrinity" class="social-btn" target="_blank"><i class="fa fa-twitter"></i></a></li>
-					<li><a href="mailto:engage@trinitymirror.com" target="_top" class="social-btn"><i class="fa fa-envelope"></i></a></li>
+					<?php if ( get_theme_mod( 'linkedin' ) ) : ?><li><a href="<?php echo get_theme_mod( 'linkedin' ); ?>" target="_blank" class="social-btn"><i class="fa fa-linkedin"></i></a></li><?php endif; ?>
+          <?php if ( get_theme_mod( 'facebook' ) ) : ?><li><a href="<?php echo get_theme_mod( 'facebook' ); ?>" class="social-btn" target="_blank"><i class="fa fa-facebook"></i></a></li><?php endif; ?>
+          <?php if ( get_theme_mod( 'twitter' ) ) : ?><li><a href="<?php echo get_theme_mod( 'twitter' ); ?>" class="social-btn" target="_blank"><i class="fa fa-twitter"></i></a></li><?php endif; ?>
+          <?php if ( get_theme_mod( 'email' ) ) : ?><li><a href="<?php echo get_theme_mod( 'email' ); ?>" target="_top" class="social-btn"><i class="fa fa-envelope"></i></a></li><?php endif; ?>
 				</ul>
 			</div>
 		</div>

@@ -31,13 +31,19 @@
       <div class="col-md-12">
         <div class="engage-logo"><?php bloginfo( 'name' ); ?></div>
         <div id="tmlogo" class="header-logo"><a href="http://www.trinitymirror.com"><img src="<?php echo get_template_directory_uri(); ?>/gui/tm_header_logo.png" alt="Trinity Mirror plc"></a></div>
-        <div id="social-nav" class="nav-social"><ul class="social-buttons">
-          <li><a href="https://www.linkedin.com/company/engage-trinity" target="_blank" class="nav-social-btn"><i class="fa fa-linkedin"></i></a></li>
-          <li><a href="https://www.facebook.com/pages/Engage-Trinity/290229891101088?skip_nax_wizard=true&ref_type=logout_gear" class="nav-social-btn" target="_blank"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="https://twitter.com/EngageTrinity" class="nav-social-btn" target="_blank"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="mailto:engage@trinitymirror.com" target="_top" class="nav-social-btn"><i class="fa fa-envelope"></i></a></li>
+
+        <div id="social-nav" class="nav-social">
+
+        <ul class="social-buttons">
+          <?php if ( get_theme_mod( 'linkedin' ) ) : ?><li><a href="<?php echo get_theme_mod( 'linkedin' ); ?>" target="_blank" class="nav-social-btn"><i class="fa fa-linkedin"></i></a></li><?php endif; ?>
+          <?php if ( get_theme_mod( 'facebook' ) ) : ?><li><a href="<?php echo get_theme_mod( 'facebook' ); ?>" class="nav-social-btn" target="_blank"><i class="fa fa-facebook"></i></a></li><?php endif; ?>
+          <?php if ( get_theme_mod( 'twitter' ) ) : ?><li><a href="<?php echo get_theme_mod( 'twitter' ); ?>" class="nav-social-btn" target="_blank"><i class="fa fa-twitter"></i></a></li><?php endif; ?>
+          <?php if ( get_theme_mod( 'email' ) ) : ?><li><a href="<?php echo get_theme_mod( 'email' ); ?>" target="_top" class="nav-social-btn"><i class="fa fa-envelope"></i></a></li><?php endif; ?>
           <li><a href="<?php echo get_home_url(); ?>/#blog">Our blog</i></a></li>
-        </ul></div>
+        </ul>
+
+        </div>
+
         <?php if ( has_nav_menu( 'primary' ) ) : ?>
           <div class="text-right navicon pull">
 	          <div id="menu-toggle" class="nav_slide_button nav-toggle"><span></span></div>
