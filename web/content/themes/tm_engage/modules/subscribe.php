@@ -4,7 +4,7 @@
  *
  * @package tm_engage
  */
-?><section id="subscribe" class="subscribe text-center very-dark-bg" data-parallax="scroll" data-speed="0.4">
+?><section id="subscribe" class="subscribe text-center very-dark-bg" data-parallax="scroll" data-speed="0.4" data-image-src="<?php echo get_template_directory_uri(); ?>/gui/subscribe-back.jpg">
   <div class="container">
     <h1 class="arrow-pink"><i class="fa fa-paper-plane"></i><span class="magenta">Engage:</span> With us</h1>
     <form id="theForm" class="simform" autocomplete="off" action="" method="post">
