@@ -30,7 +30,7 @@
     "wpackagist-plugin/wordpress-seo": "2.3.x",
     "wpackagist-plugin/google-analytics-for-wordpress": "5.4.x",
     "wpackagist-plugin/google-sitemap-generator": "4.0.x",
-    "wpackagist-plugin/wp-robots-txt": "1.1",
+    "wpackagist-plugin/wp-robots-txt": "1.1.x",
     "wpackagist-plugin/wp-security-audit-log": "2.0.x",
     "wpackagist-plugin/brute-force-login-protection": "1.5.x",
     "wpackagist-plugin/sf-move-login": "2.1.x",
