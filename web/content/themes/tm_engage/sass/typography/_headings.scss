@@ -1,6 +1,10 @@
 h1 {
-  font-family: "open-sans",sans-serif; font-weight: 300; font-size: 3.5em; color:#fff; text-transform: uppercase;
-  }
+  font-family: 'OpenSans' ,'Open Sans', 'open-sans' ,sans-serif;
+  font-weight: 300;
+  font-size: 3.5em;
+  color:#353535;
+  text-transform: uppercase;
+}
 h2 { font-size: 1.3em; color: #242830; text-transform: uppercase; font-weight: bold; }
 h2::after { content: " "; border: solid 2px #d13668; display: block; width: 35px; margin: 25px auto; }
 h3 { font-size: 1.17em; margin: 1em 0; line-height: 1.5}
