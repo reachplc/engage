@@ -35,7 +35,8 @@
     "wpackagist-plugin/brute-force-login-protection": "1.5.x",
     "wpackagist-plugin/sf-move-login": "2.2.x",
     "wpackagist-plugin/simple-301-redirects": "1.06",
-    "wpackagist-plugin/w3-total-cache": "0.9.x"
+    "wpackagist-plugin/w3-total-cache": "0.9.x",
+    "wpackagist-plugin/amcharts-charts-and-maps": "1.0.x"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "~2.3",

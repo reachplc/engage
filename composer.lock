@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0c7c3cd9805652d9b378e44cea0d7878",
+    "hash": "197a3eaccf7031fbd45448dc22c2c2c4",
     "packages": [
         {
             "name": "composer/installers",
@@ -239,6 +239,26 @@
                 "environment"
             ],
             "time": "2015-10-28 18:53:35"
+        },
+        {
+            "name": "wpackagist-plugin/amcharts-charts-and-maps",
+            "version": "1.0.13",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/amcharts-charts-and-maps/",
+                "reference": "tags/1.0.13"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/amcharts-charts-and-maps.1.0.13.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/amcharts-charts-and-maps/"
         },
         {
             "name": "wpackagist-plugin/brute-force-login-protection",
