@@ -39,14 +39,19 @@
     "wpackagist-plugin/amcharts-charts-and-maps": "1.0.x"
   },
   "require-dev": {
-    "squizlabs/php_codesniffer": "~2.3",
-    "wp-coding-standards/wpcs": "2014-12-11",
-    "wpackagist-plugin/debug-bar": "0.8.x",
-    "wpackagist-plugin/developer": "1.2.x",
-    "wpackagist-plugin/log-deprecated-notices": "0.3.x",
-    "wpackagist-plugin/p3-profiler": "1.5.x",
+    "squizlabs/php_codesniffer": "~2.4",
+    "wp-coding-standards/wpcs": "*",
+    "wpackagist-plugin/wordpress-importer": "*",
+    "wpackagist-plugin/debug-bar": "*",
+    "wpackagist-plugin/debug-objects": "*",
+    "wpackagist-plugin/debug-queries": "*",
+    "wpackagist-plugin/query-monitor": "*",
+    "wpackagist-plugin/log-deprecated-notices": "*",
+    "wpackagist-plugin/p3-profiler": "*",
     "wpackagist-plugin/theme-check": "*",
-    "wpackagist-plugin/user-switching": "1.0.x"
+    "wpackagist-plugin/rewrite-rules-inspector": "*",
+    "wpackagist-plugin/user-switching": "*",
+    "wpackagist-plugin/vip-scanner": "*"
   },
   "extra": {
     "wordpress-install-dir": "web/system",

@@ -32,6 +32,7 @@ web/content/themes/tm_engage/editor-style.css.map
 
 web/content/plugins
 web/content/mu-plugins/*
+web/content/db.php
 
 #### White-list Plugins
 !web/content/mu-plugins/engage_admin.php
