@@ -37,7 +37,8 @@
     "wpackagist-plugin/simple-301-redirects": "1.06",
     "wpackagist-plugin/w3-total-cache": "0.9.x",
     "wpackagist-plugin/amcharts-charts-and-maps": "1.0.x",
-    "wpackagist-plugin/jetpack": "3.8.x"
+    "wpackagist-plugin/jetpack": "3.8.x",
+    "wpackagist-plugin/advanced-custom-fields": "4.4.x"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "~2.4",
