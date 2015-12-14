@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0e6ce226db1a549bb02f01484a790bb6",
+    "hash": "41e57b21c78c2b15f239696c10d641c7",
     "packages": [
         {
             "name": "composer/installers",
@@ -301,6 +301,26 @@
             "homepage": "https://wordpress.org/plugins/brute-force-login-protection/"
         },
         {
+            "name": "wpackagist-plugin/custom-contact-forms",
+            "version": "6.9.4",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/custom-contact-forms/",
+                "reference": "tags/6.9.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/custom-contact-forms.6.9.4.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/custom-contact-forms/"
+        },
+        {
             "name": "wpackagist-plugin/google-analytics-for-wordpress",
             "version": "5.4.6",
             "source": {
@@ -361,6 +381,26 @@
             "homepage": "https://wordpress.org/plugins/jetpack/"
         },
         {
+            "name": "wpackagist-plugin/safe-redirect-manager",
+            "version": "1.7.7",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/safe-redirect-manager/",
+                "reference": "tags/1.7.7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/safe-redirect-manager.1.7.7.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/safe-redirect-manager/"
+        },
+        {
             "name": "wpackagist-plugin/sf-move-login",
             "version": "2.2.2",
             "source": {
@@ -379,26 +419,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/sf-move-login/"
-        },
-        {
-            "name": "wpackagist-plugin/simple-301-redirects",
-            "version": "1.06",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/simple-301-redirects/",
-                "reference": "tags/1.06"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/simple-301-redirects.1.06.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/simple-301-redirects/"
         },
         {
             "name": "wpackagist-plugin/w3-total-cache",
