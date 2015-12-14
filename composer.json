@@ -36,7 +36,8 @@
     "wpackagist-plugin/sf-move-login": "2.2.x",
     "wpackagist-plugin/simple-301-redirects": "1.06",
     "wpackagist-plugin/w3-total-cache": "0.9.x",
-    "wpackagist-plugin/amcharts-charts-and-maps": "1.0.x"
+    "wpackagist-plugin/amcharts-charts-and-maps": "1.0.x",
+    "wpackagist-plugin/jetpack": "3.8.x"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "~2.4",
