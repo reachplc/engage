@@ -39,7 +39,7 @@
     "wpackagist-plugin/amcharts-charts-and-maps": "1.0.x",
     "wpackagist-plugin/jetpack": "3.8.x",
     "wpackagist-plugin/advanced-custom-fields": "4.4.x",
-    "wpackagist-plugin/custom-contact-forms": "6.9.x"
+    "wpackagist-plugin/custom-contact-forms": "7.0.x"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "~2.4",
