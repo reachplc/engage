@@ -18,6 +18,7 @@
 </head>
 
 <body id="top" <?php body_class(); ?>>
+<?php if ( function_exists( 'HM_GTM\tag' ) ) { HM_GTM\tag(); } ?>
 <!-- Preloader -->
 <div id="preloader">
   <div id="status"></div>
