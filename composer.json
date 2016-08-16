@@ -19,30 +19,29 @@
   "repositories": [
     {
       "type": "composer",
-      "url": "http://wpackagist.org"
+      "url": "https://wpackagist.org"
     }
   ],
   "require": {
     "php": ">=5.4",
     "johnpbloch/wordpress": "4.5.x",
-    "vlucas/phpdotenv": "~2.0",
-    "composer/installers": "~1.0",
+    "vlucas/phpdotenv": "2.2",
+    "composer/installers": "1.0.x",
     "wpackagist-plugin/wordpress-seo": "3.4.x",
-    "wpackagist-plugin/google-analytics-for-wordpress": "5.4.x",
+    "wpackagist-plugin/google-analytics-for-wordpress": "5.5.x",
     "wpackagist-plugin/google-sitemap-generator": "4.0.x",
     "wpackagist-plugin/wp-robots-txt": "1.1.x",
-    "wpackagist-plugin/wp-security-audit-log": "2.3.x",
+    "wpackagist-plugin/wp-security-audit-log": "2.5.x",
     "wpackagist-plugin/brute-force-login-protection": "1.5.x",
-    "wpackagist-plugin/sf-move-login": "2.2.x",
     "wpackagist-plugin/safe-redirect-manager": "1.7.x",
     "wpackagist-plugin/w3-total-cache": "0.9.x",
     "wpackagist-plugin/amcharts-charts-and-maps": "1.1.x",
     "wpackagist-plugin/jetpack": "4.1.x",
-    "wpackagist-plugin/advanced-custom-fields": "7.8.x",
-    "wpackagist-plugin/custom-contact-forms": "7.5.x"
+    "wpackagist-plugin/advanced-custom-fields": "4.4.x",
+    "wpackagist-plugin/custom-contact-forms": "7.8.x"
   },
   "require-dev": {
-    "squizlabs/php_codesniffer": "~2.4",
+    "squizlabs/php_codesniffer": "*",
     "wp-coding-standards/wpcs": "dev-master",
     "wpackagist-plugin/wordpress-importer": "*",
     "wpackagist-plugin/debug-bar": "*",
