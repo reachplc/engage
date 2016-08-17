@@ -13,8 +13,8 @@ composer update --no-interaction  --prefer-dist
 
 # Setup Node
 echo "Setup Node"
-nvm install 6.3
-nvm use 6.3
+nvm install 6.2
+nvm use 6.2
 
 # Install dependancies for running your tests or other tasks
 echo "Install dependancies"
@@ -24,3 +24,4 @@ npm install -g bower
 # Setup Theme
 echo "Setup Parent Theme"
 npm install
+grunt build
