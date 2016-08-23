@@ -16,12 +16,15 @@ function tm_engage_jetpack_setup() {
 		'render'    => 'tm_engage_infinite_scroll_render',
 		'footer'    => 'page',
 	) );
-} // end function _s_jetpack_setup
+} // End function _s_jetpack_setup.
 add_action( 'after_setup_theme', 'tm_engage_jetpack_setup' );
 
+/**
+ * Infinite Scroll
+ */
 function tm_engage_infinite_scroll_render() {
 	while ( have_posts() ) {
 		the_post();
 		get_template_part( 'template-parts/content', get_post_format() );
 	}
-} // end function tm_engage_infinite_scroll_render
+} // End function tm_engage_infinite_scroll_render.

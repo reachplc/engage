@@ -9,10 +9,10 @@
 
 if ( ! function_exists( 'the_posts_navigation' ) ) :
 	/**
- * Display navigation to next/previous set of posts when applicable.
- *
- * @todo Remove this function when WordPress 4.3 is released.
- */
+	 * Display navigation to next/previous set of posts when applicable.
+	 *
+	 * @todo Remove this function when WordPress 4.3 is released.
+	 */
 	function the_posts_navigation() {
 		// Don't print empty markup if there's only one page.
 		if ( $GLOBALS['wp_query']->max_num_pages < 2 ) {
@@ -39,10 +39,10 @@ endif;
 
 if ( ! function_exists( 'the_post_navigation' ) ) :
 	/**
- * Display navigation to next/previous post when applicable.
- *
- * @todo Remove this function when WordPress 4.3 is released.
- */
+	 * Display navigation to next/previous post when applicable.
+	 *
+	 * @todo Remove this function when WordPress 4.3 is released.
+	 */
 	function the_post_navigation() {
 		// Don't print empty markup if there's nowhere to navigate.
 		$previous = ( is_attachment() ) ? get_post( get_post()->post_parent ) : get_adjacent_post( false, '', true );
@@ -67,8 +67,8 @@ endif;
 
 if ( ! function_exists( 'tm_engage_posted_on' ) ) :
 	/**
- * Prints HTML with meta information for the current post-date/time and author.
- */
+	 * Prints HTML with meta information for the current post-date/time and author.
+	 */
 	function tm_engage_posted_on() {
 		$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
 		if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
@@ -92,28 +92,28 @@ if ( ! function_exists( 'tm_engage_posted_on' ) ) :
 			'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 		);
 
-		echo '<span class="posted-on">' . $posted_on . '</span>'; // WPCS: XSS OK
+		echo '<span class="posted-on">' . $posted_on . '</span>'; // WPCS: XSS OK.
 
 	}
 endif;
 
 if ( ! function_exists( 'tm_engage_entry_footer' ) ) :
 	/**
- * Prints HTML with meta information for the categories, tags and comments.
- */
+	 * Prints HTML with meta information for the categories, tags and comments.
+	 */
 	function tm_engage_entry_footer() {
 		// Hide category and tag text for pages.
 		if ( 'post' == get_post_type() ) {
 			/* translators: used between list items, there is a space after the comma */
 			$categories_list = get_the_category_list( esc_html__( ', ', 'tm_engage' ) );
 			if ( $categories_list && tm_engage_categorized_blog() ) {
-				printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'tm_engage' ) . '</span>', $categories_list ); // WPCS: XSS OK
+				printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'tm_engage' ) . '</span>', $categories_list ); // WPCS: XSS OK.
 			}
 
 			/* translators: used between list items, there is a space after the comma */
 			$tags_list = get_the_tag_list( '', esc_html__( ', ', 'tm_engage' ) );
 			if ( $tags_list ) {
-				printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'tm_engage' ) . '</span>', $tags_list ); // WPCS: XSS OK
+				printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'tm_engage' ) . '</span>', $tags_list ); // WPCS: XSS OK.
 			}
 		}
 
@@ -129,15 +129,15 @@ endif;
 
 if ( ! function_exists( 'the_archive_title' ) ) :
 	/**
- * Shim for `the_archive_title()`.
- *
- * Display the archive title based on the queried object.
- *
- * @todo Remove this function when WordPress 4.3 is released.
- *
- * @param string $before Optional. Content to prepend to the title. Default empty.
- * @param string $after  Optional. Content to append to the title. Default empty.
- */
+	 * Shim for `the_archive_title()`.
+	 *
+	 * Display the archive title based on the queried object.
+	 *
+	 * @todo Remove this function when WordPress 4.3 is released.
+	 *
+	 * @param string $before Optional. Content to prepend to the title. Default empty.
+	 * @param string $after  Optional. Content to append to the title. Default empty.
+	 */
 	function the_archive_title( $before = '', $after = '' ) {
 		if ( is_category() ) {
 			$title = sprintf( esc_html__( 'Category: %s', 'tm_engage' ), single_cat_title( '', false ) );
@@ -189,22 +189,22 @@ if ( ! function_exists( 'the_archive_title' ) ) :
 		$title = apply_filters( 'get_the_archive_title', $title );
 
 		if ( ! empty( $title ) ) {
-			echo $before . $title . $after;  // WPCS: XSS OK
+			echo $before . $title . $after;  // WPCS: XSS OK.
 		}
 	}
 endif;
 
 if ( ! function_exists( 'the_archive_description' ) ) :
 	/**
- * Shim for `the_archive_description()`.
- *
- * Display category, tag, or term description.
- *
- * @todo Remove this function when WordPress 4.3 is released.
- *
- * @param string $before Optional. Content to prepend to the description. Default empty.
- * @param string $after  Optional. Content to append to the description. Default empty.
- */
+	 * Shim for `the_archive_description()`.
+	 *
+	 * Display category, tag, or term description.
+	 *
+	 * @todo Remove this function when WordPress 4.3 is released.
+	 *
+	 * @param string $before Optional. Content to prepend to the description. Default empty.
+	 * @param string $after  Optional. Content to append to the description. Default empty.
+	 */
 	function the_archive_description( $before = '', $after = '' ) {
 		$description = apply_filters( 'get_the_archive_description', term_description() );
 
@@ -216,7 +216,7 @@ if ( ! function_exists( 'the_archive_description' ) ) :
 		 *
 		 * @param string $description Archive description to be displayed.
 		 */
-			echo $before . $description . $after;  // WPCS: XSS OK
+			echo $before . $description . $after;  // WPCS: XSS OK.
 		}
 	}
 endif;
