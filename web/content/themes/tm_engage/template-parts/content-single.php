@@ -1,18 +1,23 @@
 <?php
 /**
+ * Template part for single posts.
+ *
+ * @link https://codex.wordpress.org/Template_Hierarchy
+ *
  * @package tm_engage
  */
+
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'news' ); ?>>
 
 <header class="entry-meta">
 
-  <?php if( has_post_thumbnail( $post->ID ) ): ?>
-	  <?php echo get_the_post_thumbnail( $post->ID ); ?>
-	<?php else: ?>
-		<img src="<?php echo get_template_directory_uri(); ?>/gui/feature-placeholder.png" alt="">
-  <?php endif; ?>
+	<?php if ( has_post_thumbnail( $post->ID ) ) :  ?>
+		<?php echo get_the_post_thumbnail( $post->ID ); ?>
+	<?php else : ?>
+		<img src="<?php echo esc_url( get_template_directory_uri() . '/gui/feature-placeholder.png' ); ?>" alt="">
+	<?php endif; ?>
 
 	<div class="container section-padding-top">
 		<div class="row">

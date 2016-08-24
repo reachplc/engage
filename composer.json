@@ -24,7 +24,7 @@
   ],
   "require": {
     "php": ">=5.4",
-    "johnpbloch/wordpress": "4.5.x",
+    "johnpbloch/wordpress": "4.6.x",
     "vlucas/phpdotenv": "2.2",
     "composer/installers": "1.0.x",
     "wpackagist-plugin/wordpress-seo": "3.4.x",
@@ -36,7 +36,7 @@
     "wpackagist-plugin/safe-redirect-manager": "1.7.x",
     "wpackagist-plugin/w3-total-cache": "0.9.x",
     "wpackagist-plugin/amcharts-charts-and-maps": "1.1.x",
-    "wpackagist-plugin/jetpack": "4.1.x",
+    "wpackagist-plugin/jetpack": "4.2.x",
     "wpackagist-plugin/advanced-custom-fields": "4.4.x",
     "wpackagist-plugin/custom-contact-forms": "7.8.x"
   },
@@ -53,7 +53,9 @@
     "wpackagist-plugin/theme-check": "*",
     "wpackagist-plugin/rewrite-rules-inspector": "*",
     "wpackagist-plugin/user-switching": "*",
-    "wpackagist-plugin/vip-scanner": "*"
+    "wpackagist-plugin/vip-scanner": "*",
+    "wpackagist-plugin/wp-crontrol": "*",
+    "wpackagist-plugin/wa11y": "*"
   },
   "extra": {
     "wordpress-install-dir": "web/system",

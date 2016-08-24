@@ -6,6 +6,7 @@
  *
  * @package tm_engage
  */
+
 ?>
 
 	</div><!-- #content -->
@@ -15,7 +16,7 @@
 	    <div class="row">
 	      <div class="col-xs-6">
 	        <div class="footer_logo">
-	        <img src="<?php echo get_template_directory_uri(); ?>/gui/tm_logo.png" alt="Trinity Mirror">
+	        <img src="<?php echo esc_url( get_template_directory_uri() . '/gui/tm_logo.png' ); ?>" alt="Trinity Mirror">
 	      </div>
 	      </div>
 	      <div class="col-xs-6 credit">
@@ -31,41 +32,41 @@
 
 <!-- Preloader -->
 <script type="text/javascript">
-  //<![CDATA[
-  ;(function( $ ){
-    $(window).load(function() { // makes sure the whole site is loaded
-      $('#status').fadeOut(); // will first fade out the loading animation
-      $('#preloader').delay(1000).fadeOut('slow'); // will fade out the white DIV that covers the website.
-      $('body').delay(1000).css({'overflow':'visible'});
-    })
-  })( jQuery );
-  //]]>
+	//<![CDATA[
+	;(function( $ ){
+	$(window).load(function() { // makes sure the whole site is loaded
+	  $('#status').fadeOut(); // will first fade out the loading animation
+	  $('#preloader').delay(1000).fadeOut('slow'); // will fade out the white DIV that covers the website.
+	  $('body').delay(1000).css({'overflow':'visible'});
+	})
+	})( jQuery );
+	//]]>
 </script>
 
 
 <script>
 ;(function( $ ){
 	$(document).ready(function(e) {
-    $("img.lazy").lazyload();
+	$("img.lazy").lazyload();
 	});
 })( jQuery );
 </script>
 
 <!-- Control the camera slider -->
 <script>
-               (function($){
-                jQuery('#engage-hero').camera({
-                  height: 'auto',
-                  navigation: false,
-                  loader: 'none',
-                  slideOn: 'left',
-                  fx: 'scrollLeft',
-                  overlayer: true,
-                  playPause: false,
-                  hover: false,
-                  pagination: false
-                });
-               })(jQuery);
+			   (function($){
+				jQuery('#engage-hero').camera({
+				  height: 'auto',
+				  navigation: false,
+				  loader: 'none',
+				  slideOn: 'left',
+				  fx: 'scrollLeft',
+				  overlayer: true,
+				  playPause: false,
+				  hover: false,
+				  pagination: false
+				});
+			   })(jQuery);
 </script>
 
 </body>

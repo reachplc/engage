@@ -1,9 +1,9 @@
 <?php
-/*
-Template Name: Home Page
-*
-* @package tm_engage
-*/
+/**
+ * Template Name: Home Page
+ *
+ * @package tm_engage
+ */
 
 get_header(); ?>
 
@@ -32,7 +32,5 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
-<?php #get_sidebar(); ?>
 
 <?php get_footer(); ?>

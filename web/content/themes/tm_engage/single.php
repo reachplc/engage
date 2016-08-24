@@ -17,18 +17,18 @@ get_header(); ?>
 			<div class="container section-padding-bottom">
 					<div class="row">
 
-			<?php if (is_single()) : ?>
+			<?php if ( is_single() ) : ?>
 
 				<div class="navigation col-md-10 col-md-offset-1">
-					<?php previous_post_link('<div class="alignleft">Previous entry: %link</div>', '%title'); ?>
-					<?php next_post_link('<div class="alignright">Next entry: %link</div>', '%title'); ?>
+					<?php previous_post_link( '<div class="alignleft">Previous entry: %link</div>', '%title' ); ?>
+					<?php next_post_link( '<div class="alignright">Next entry: %link</div>', '%title' ); ?>
 				</div>
 
 			<?php else : ?>
 
 				<div class="navigation col-md-10 col-md-offset-1">
-					<div class="alignleft"><?php next_posts_link('&laquo; Older Entries') ?></div>
-					<div class="alignright"><?php previous_posts_link('Newer Entries &raquo;') ?></div>
+					<div class="alignleft"><?php next_posts_link( '&laquo; Older Entries' ) ?></div>
+					<div class="alignright"><?php previous_posts_link( 'Newer Entries &raquo;' ) ?></div>
 				</div>
 
 			<?php endif; ?>
@@ -37,16 +37,15 @@ get_header(); ?>
 			</div>
 
 			<?php
-				// If comments are open or we have at least one comment, load up the comment template
+				// If comments are open or we have at least one comment, load up the comment template.
 			if ( comments_open() || get_comments_number() ) :
 				comments_template();
 				endif;
 			?>
 
-		<?php endwhile; // end of the loop. ?>
+		<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php #get_sidebar(); ?>
 <?php get_footer(); ?>
