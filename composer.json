@@ -20,6 +20,10 @@
     {
       "type": "composer",
       "url": "https://wpackagist.org"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/trinitymirror/WP-OAuth.git"
     }
   ],
   "require": {
@@ -27,7 +31,7 @@
     "johnpbloch/wordpress": "4.6.x",
     "vlucas/phpdotenv": "2.2",
     "composer/installers": "1.0.x",
-    "wpackagist-plugin/wordpress-seo": "3.4.x",
+    "wpackagist-plugin/wordpress-seo": "3.5.x",
     "wpackagist-plugin/google-analytics-for-wordpress": "5.5.x",
     "wpackagist-plugin/google-sitemap-generator": "4.0.x",
     "wpackagist-plugin/wp-robots-txt": "1.1.x",
@@ -36,9 +40,10 @@
     "wpackagist-plugin/safe-redirect-manager": "1.7.x",
     "wpackagist-plugin/w3-total-cache": "0.9.x",
     "wpackagist-plugin/amcharts-charts-and-maps": "1.1.x",
-    "wpackagist-plugin/jetpack": "4.2.x",
+    "wpackagist-plugin/jetpack": "4.3.x",
     "wpackagist-plugin/advanced-custom-fields": "4.4.x",
-    "wpackagist-plugin/custom-contact-forms": "7.8.x"
+    "wpackagist-plugin/custom-contact-forms": "7.8.x",
+    "trinitymirror/wp-oauth": "dev-development"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "*",
