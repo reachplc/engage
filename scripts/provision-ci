@@ -9,7 +9,8 @@ phpenv local 5.5
 
 # Install PHP dependancies
 echo "Install PHP dependancies"
-composer update --no-interaction  --prefer-dist
+php -n /home/rof/bin/composer config -g github-oauth.github.com $GITHUB_ACCESS
+php -n /home/rof/bin/composer install --no-interaction  --prefer-dist
 
 # Setup Node
 echo "Setup Node"
