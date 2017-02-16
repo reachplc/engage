@@ -1,3 +1,6 @@
+#!/bin/sh
+#
+
 ## Optimise
 composer install --no-dev --no-interaction
 
