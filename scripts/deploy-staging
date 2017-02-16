@@ -8,25 +8,25 @@ grunt optim
 TIMESTAMP=$(date +%Y%m%d%H%M%S)
 
 # Make a new releases folder
-ssh $USERNAME@$HOST "mkdir $DEPLOY_TO/releases/$TIMESTAMP"
+ssh $USERNAME@$HOST "mkdir $STAGING_DEPLOY_TO/releases/$TIMESTAMP"
 
 # Copy files
-rsync -avz -e "ssh" --exclude=".git" ~/clone/web/ $USERNAME@$HOST:$DEPLOY_TO/releases/$TIMESTAMP
+rsync -avz -e "ssh" --exclude=".git" ~/clone/web/ $USERNAME@$HOST:$STAGING_DEPLOY_TO/releases/$TIMESTAMP
 
 # Copy files
-rsync -avz -e "ssh" ~/clone/web/ $USERNAME@$HOST:$DEPLOY_TO/releases/$TIMESTAMP
-rsync -avz -e "ssh" ~/clone/config/staging.htaccess $USERNAME@$HOST:$DEPLOY_TO/releases/$TIMESTAMP/.htaccess
-rsync -avz -e "ssh" ~/clone/config/staging.wp-config.php $USERNAME@$HOST:$DEPLOY_TO/releases/$TIMESTAMP/wp-config.php
+rsync -avz -e "ssh" ~/clone/web/ $USERNAME@$HOST:$STAGING_DEPLOY_TO/releases/$TIMESTAMP
+rsync -avz -e "ssh" ~/clone/config/staging.htaccess $USERNAME@$HOST:$STAGING_DEPLOY_TO/releases/$TIMESTAMP/.htaccess
+rsync -avz -e "ssh" ~/clone/config/staging.wp-config.php $USERNAME@$HOST:$STAGING_DEPLOY_TO/releases/$TIMESTAMP/wp-config.php
 
 # Copy API
-scp -c blowfish -C -r ~/clone/api $USERNAME@$HOST:$DEPLOY_TO/releases/$TIMESTAMP/api
+scp -c blowfish -C -r ~/clone/api $USERNAME@$HOST:$STAGING_DEPLOY_TO/releases/$TIMESTAMP/api
 
 # Symlink shared folders
-ssh $USERNAME@$HOST "cd $DEPLOY_TO/releases/$TIMESTAMP/content/;ln -s $SHARED/uploads uploads"
+ssh $USERNAME@$HOST "cd $STAGING_DEPLOY_TO/releases/$TIMESTAMP/content/;ln -s $STAGING_SHARED/uploads uploads"
 
-#ln -s $SHARED/logs $DEPLOY_TO/$TIMESTAMP/content/logs
+#ln -s $STAGING_SHARED/logs $STAGING_DEPLOY_TO/$TIMESTAMP/content/logs
 
 # Update app version
-ssh $USERNAME@$HOST "rm -rf $CURRENT;ln -s $DEPLOY_TO/releases/$TIMESTAMP/ $CURRENT"
+ssh $USERNAME@$HOST "rm -rf $STAGING_CURRENT;ln -s $STAGING_DEPLOY_TO/releases/$TIMESTAMP/ $STAGING_CURRENT"
 
 # Cleanup
